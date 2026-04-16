@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siding Experts Charlotte | Carolinas Supreme Siding LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .btn { display: inline-block; background-color: #2563eb; color: white !important; font-weight: 700; padding: 14px 32px; border-radius: 40px; text-decoration: none; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background-color: #1d4ed8; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(37,99,235,0.2); }
+        
+        header { padding: 20px 0; background: white; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.4rem; font-weight: 800; color: #0f172a; text-decoration: none; }
+        .cta-phone { font-weight: 700; color: #2563eb; text-decoration: none; font-size: 1.1rem; border: 2px solid #2563eb; padding: 8px 15px; border-radius: 8px; }
+
+        .hero { padding: 120px 0; text-align: center; background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)), url('images/hero.jpg'); background-size: cover; background-position: center; color: white; }
+        
+        /* Redesigned Services Section with Finishes */
+        .services-section { padding: 80px 0; background: white; }
+        .section-intro { text-align: center; max-width: 800px; margin: 0 auto 50px; }
+        .section-title { font-size: 2.5rem; font-weight: 800; color: #0f172a; margin-bottom: 20px; text-transform: uppercase; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 50px; }
+        
+        .finish-card { background: white; border-radius: 24px; overflow: hidden; border: 1px solid #e2e8f0; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .finish-card:hover { transform: translateY(-5px); border-color: #2563eb; box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+        .finish-img { width: 100%; height: 240px; object-fit: cover; }
+        .finish-content { padding: 30px; }
+        .finish-icon-box { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .finish-icon-box i { font-size: 1.8rem; color: #2563eb; }
+        .finish-content h3 { font-size: 1.4rem; color: #0f172a; font-weight: 700; }
+        .finish-content p { font-size: 0.95rem; color: #475569; }
+
+        /* Why Choose Us */
+        .why-us { background: #0f172a; color: white; padding: 80px 0; }
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+        .why-item i { color: #C5A059; font-size: 1.8rem; margin-bottom: 15px; }
+
+        .form-section { padding: 80px 0; background: #f8fafc; }
+        .form-box { max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        input, select, textarea { width: 100%; padding: 14px; margin-bottom: 15px; border-radius: 12px; border: 1px solid #cbd5e1; font-family: inherit; }
+
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; z-index: 2000; box-shadow: 0 10px 25px rgba(0,0,0,0.2); text-decoration: none; }
+        
+        footer { background: #0f172a; padding: 50px 0; text-align: center; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <a href="#" class="logo">🏠 Carolinas Supreme Siding</a>
+        <a href="tel:19804284395" class="cta-phone"><i class="fas fa-phone-alt"></i> (980) 428-4395</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Professional Siding & Exterior Services</h1>
+        <p style="font-size: 1.3rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+         Siding installation and repair in Charlotte, NC. 
+    
+        </p>
+        <p class="intro-text">We install and repair siding for residential homes. Fast, clean, and professional work every time.</p>
+        <ul class="check-list" style="list-style: none; padding: 0; margin: 20px 0; display: flex; justify-content: center; gap: 20px; color: white; font-weight: bold;">
+            <li>✅ Fast Turnaround</li>
+            <li>✅ Clean and Professional Work</li>
+            <li>✅ Free estimates</li>
+        </ul>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="#quote" class="btn">Get Free Estimate</a>
+            <button id="abrirModalBtn" class="btn" style="background: transparent; border: 2px solid white;">View Portfolio</button>
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+        <div class="section-intro">
+            <h2 class="section-title">Our Siding Services</h2>
+            <p>We specialize in high-quality exterior siding solutions designed to enhance the durability, efficiency, and appearance of your property.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="finish-card">
+                <img src="images/finish1.jpg" alt="Vinyl Siding Finish" class="finish-img">
+                <div class="finish-content">
+                    <div class="finish-icon-box"><i class="fas fa-layer-group"></i><h3>Vinyl Siding</h3></div>
+                    <p>Cost-effective, low-maintenance, and available in a wide variety of styles.</p>
+                </div>
+            </div>
+            <div class="finish-card">
+                <img src="images/finish2.jpg" alt="Fiber Cement Siding Finish" class="finish-img">
+                <div class="finish-content">
+                    <div class="finish-icon-box"><i class="fas fa-shield-alt"></i><h3>Fiber Cement</h3></div>
+                    <p>Durable, weather-resistant (James Hardie), and built to last.</p>
+                </div>
+            </div>
+            <div class="finish-card">
+                <img src="images/finish3.jpg" alt="LP SmartSide Siding Finish" class="finish-img">
+                <div class="finish-content">
+                    <div class="finish-icon-box"><i class="fas fa-tree"></i><h3>LP SmartSide</h3></div>
+                    <p>Engineered wood siding offering superior strength and beauty.</p>
+                </div>
+            </div>
+            <div class="finish-card">
+                <img src="images/finish4.jpg" alt="Architectural Panel Siding Finish" class="finish-img">
+                <div class="finish-content">
+                    <div class="finish-icon-box"><i class="fas fa-border-all"></i><h3>Architectural Panels</h3></div>
+                    <p>Modern and sleek designs for a contemporary exterior look.</p>
+                </div>
+            </div>
+            <div class="finish-card">
+                <img src="images/finish5.jpg" alt="Porch Ceiling Finish" class="finish-img">
+                <div class="finish-content">
+                    <div class="finish-icon-box"><i class="fas fa-home"></i><h3>Porch Ceilings</h3></div>
+                    <p>Wide range of styles and finishes (beadboard, shiplap, etc.).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-us">
+    <div class="container">
+        <h2 class="section-title" style="color: white; text-align: center; margin-bottom: 50px;">Why Choose Us?</h2>
+        <div class="why-grid">
+            <div class="why-item"><i class="fas fa-user-tie"></i><p>Professional & Skilled Crew</p></div>
+            <div class="why-item"><i class="fas fa-medal"></i><p>High-Quality Materials</p></div>
+            <div class="why-item"><i class="fas fa-search-plus"></i><p>Attention to Detail</p></div>
+            <div class="why-item"><i class="fas fa-calendar-check"></i><p>Timely Project Completion</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="form-section" id="quote">
+    <div class="container">
+        <div class="form-box">
+            <h2 style="text-align: center; margin-bottom: 30px;">Request a Free Estimate</h2>
+            <form action="https://formspree.io/f/mojyvrwo" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <select name="service">
+                    <option value="Siding">Siding Installation</option>
+                    <option value="Porch Ceiling">Porch Ceiling</option>
+                    <option value="Windows">Windows / Other</option>
+                </select>
+                <textarea name="message" placeholder="Project details or Address" rows="4"></textarea>
+                <button type="submit" class="btn" style="width: 100%;">Send Request</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/19804284395" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<footer>
+    <div class="container">
+        <h2>Carolinas Supreme Siding LLC</h2>
+
+<p>
+Licensed & Insured • Charlotte, NC • Free Estimates
+</p>
+
+<p>
+Call or Text Today: <strong>(980) 428-4395</strong>
+</p>
+
+<p>
+📩 carolinassupremesiding@gmail.com
+</p>
+
+<a href="tel:19804284395" style="display:inline-block; margin-top:15px; background:#2563eb; color:white; padding:12px 25px; border-radius:8px; text-decoration:none;">
+Call Now
+</a>
+
+<p style="margin-top:20px; font-size:12px; opacity:0.7;">
+© 2026 Carolinas Supreme Siding LLC. All rights reserved.
+</p>
+</footer>
+
+<div id="galeriaModal" style="display:none; position:fixed; z-index:3000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9); overflow-y:auto;">
+    <div style="background:white; margin:5% auto; padding:30px; border-radius:24px; width:90%; max-width:1000px; position:relative;">
+        <span id="closeModal" style="float:right; font-size:30px; cursor:pointer;">&times;</span>
+        <h2 style="text-align:center;">Recent Portfolio Projects</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; margin-top:20px;">
+            <img src="images/proyecto1.jpg" style="width:100%; height:200px; object-fit:cover; border-radius:10px;">
+            <img src="images/proyecto2.jpg" style="width:100%; height:200px; object-fit:cover; border-radius:10px;">
+            <img src="images/proyecto3.jpg" style="width:100%; height:200px; object-fit:cover; border-radius:10px;">
+        </div>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("galeriaModal");
+    const btn = document.getElementById("abrirModalBtn");
+    const close = document.getElementById("closeModal");
+    if(btn) btn.onclick = () => { modal.style.display = "block"; document.body.style.overflow = "hidden"; }
+    if(close) close.onclick = () => { modal.style.display = "none"; document.body.style.overflow = "auto"; }
+    window.onclick = (e) => { if(e.target == modal) { modal.style.display = "none"; document.body.style.overflow = "auto"; } }
+</script>
+
+</body>
+</html>
